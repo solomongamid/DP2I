@@ -1,0 +1,142 @@
+li.navbar-brand
+{
+    position: absolute;
+    left: 40% ;
+    
+    
+}
+.up{ 
+    background-color: rgb(243, 239, 224);
+    background-size: 100%;
+
+}
+
+#supic{
+   display: block;
+    margin: 0 auto;
+}
+
+
+.upper {
+	font-family: "Times New Roman", Times, serif;
+    font-size: 35px;
+    color: black;
+    margin-top: auto;
+    padding-top: 100px;
+    height: 800px;
+    text-align: center;
+}
+
+.container{
+    position: absolute;
+    top: 100px;
+    left: 6px;
+}
+
+.introduction{
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+}
+#su{
+    padding: 30px;
+    font-size: 17px;
+}
+
+li.center {
+	position: absolute;
+	left: 40% ;
+    font-family: "Times New Roman", Times, serif;
+	color: rgb(34, 163, 159);
+	font-size: 200% ;
+	
+}
+
+ul.navbar {
+    list-style-type: none; /*for hide the point in the list*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(225, 189, 192);
+}
+
+
+
+ul.navbar li:last-child {
+    border-right: none;
+}
+
+ul.navbar li a {
+    display: block;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(34, 163, 159);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.navbar li a:hover:not(.active) {
+    background-color: rgb(193, 197, 196);
+}
+
+/* onclick change the background color */ 
+a.link.active { color:#003300; }
+
+h4 {
+    display: none;
+}
+ul.Information {
+     list-style-type: none; /*for hide the point in the list*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(242, 252, 250);
+    color: white;
+}
+
+ul.Information li a {
+    display: block;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(34, 163, 159);
+    padding: 50px 0 8px 16px;
+    text-decoration: none;
+}
+ul.Information li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.Information li a:hover:not(.active) {
+    background-color: rgb(193, 197, 196);
+    color: white;
+}
+p.details {
+	position: absolute;
+	left: 25% ;
+	margin: 40px;
+}
+#panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 100px;
+    display: none;
+}
+.hidden { display: none; }
+.unhidden { display: block; }
+a {
+    text-decoration: none;
+}
+.footer{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgb(67, 66, 66);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}

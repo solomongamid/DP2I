@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="DP21.css" rel="stylesheet">	
+  	<title>DP2I</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>     
+
+
+    <!-- For change from page to other -->
+  <script>
+  $(document).ready(function(){
+      $("#su div").hide();
+      
+      $("#Formulaire").click(function(){
+          $("#su div").hide();
+          $('.introduction').hide();
+          $('#toon1').show();
+         
+      });
+
+      $("#produits").click(function(){
+          $("#su div").hide();
+          $('.introduction').hide();
+          $('#toon3').show();
+         
+      });      
+  });
+  //onclick change the background color
+  $(function() {
+     var links = $('a.link').click(function() {
+         links.removeClass('active');
+         $(this).addClass('active');
+     });
+  });
+
+
+  </script>
+
+  </head>
+  <body>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-brand">
+            <img src="dp2i.png" alt="DP2I" width="150" height="70" >
+          </div>
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li> <a href="mission.odt" download> <h3> Présentation </h3>  </a></li>
+
+          </ul>
+        </div>
+      </nav>
+
+      <div class="up">
+          <div class="container">
+            <a class="btn btn-info btn-lg" href="#inform">
+            <span class="glyphicon glyphicon-hand-down"></span>
+            </a>
+          </div>
+
+          <div class="upper">
+            <img src="logo_dp2i.png" alt="suliman picture" width="304" height="236" id="supic"  >
+          	
+              Technologie / Immobilier / Conseil <br>
+
+              DP2I, votre partenaire technologique immobilier au quotidien,<br>
+              vous accompagne dans vos projets.
+              CRM, Multidiffusion, Extranet Prescripteurs, Sites Web, Landing-pages.
+
+          </div>
+      </div>
+      
+      
+      <div class="option">
+          <div class="row">
+          <div class="col-sm-4">
+      	<ul class="Information">
+              <li> <a href="mission.odt" download> <h3> Présentation </h3>  </a></li> <!-- the link for the first page -->
+              <li> <a id="Formulaire" class="link"> <h3> Formulaire </h3>  </a></li>  <!-- the link for the second page -->
+              <li> <a id="produits" class="link"> <h3> Premiers produits </h3>  </a></li> <!-- the link for the third page -->
+          </ul>
+          </div> 
+
+          <div class="introduction">
+          <b>  Présentation   </b>
+           <br> DP2I, société à responsabilité limitée est active depuis 16 ans.
+            Établie à PARIS 13 (75013), elle est spécialisée dans le secteur d'activité du conseil pour les affaires et autres conseils de gestion. Son effectif est compris entre 1 et 2 salariés. 
+            Sur l'année 2016 elle réalise un chiffre d'affaires de 664 300,00 €.
+            Le total du bilan a augmenté de 24,25 % entre 2015 et 2016.
+            Societe.com recense 1 établissement actif et le dernier événement notable de cette entreprise date du 16-02-2016.
+            Xavier BERNARD, est gérant de l'entreprise DP2I. 
+            <br>
+          </div>
+
+          <div class="col-sm-8 " id="su" >
+          <!-- the first page -->
+            <div class="p1" id="toon1">
+                <h2>Formulaire</h2>
+                  <form class="form-group" name="contactform" method="post" action="https://formspree.io/sulimanabdulgadeir@gmail.com">
+                    <input type="text" name="name" value="" placeholder="Nom" class="form-control"><br>
+                    <input type="text" name="name" value="" placeholder="Prénom" class="form-control"><br>
+                    <input type="number" name="name" value="" placeholder="Telephone" class="form-control"><br>
+                    <input type="email" name="email" value="" placeholder="E-mail" class="form-control"><br>
+                    <textarea name="message" rows="8" cols="40" maxlength="600" class="form-control">Suggestions</textarea><br>
+                    <input type="submit" name="name" value="send">
+                  </form>
+            </div>
+
+            <!-- the second page -->
+            <div class="p2" id="toon2">
+              
+              DP2I, société à responsabilité limitée est active depuis 16 ans.
+              Établie à PARIS 13 (75013), elle est spécialisée dans le secteur d'activité du conseil pour les affaires et autres conseils de gestion. Son effectif est compris entre 1 et 2 salariés.
+
+              Sur l'année 2016 elle réalise un chiffre d'affaires de 664 300,00 €.
+
+              Le total du bilan a augmenté de 24,25 % entre 2015 et 2016.
+
+              Societe.com recense 1 établissement actif et le dernier événement notable de cette entreprise date du 16-02-2016.
+
+              Xavier BERNARD, est gérant de l'entreprise DP2I.
+
+              Read more at https://www.societe.com/societe/dp2i-438996951.html#r5gvhyFzu980wp6I.99
+      		  </div>
+
+            <!-- the third page -->
+            <div class="p3" id="toon3">
+                <h2>Les premiers produits</h2>            
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>produit</th>
+                      <th>publisher</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th> <span id="name"></span> </th>  <!-- get the name from the function by using the ID -->
+                      <th> <span id="publisher"></span> </th>   <!-- get the publisher from the function by using the ID -->
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+
+            </div>
+          </div>
+
+          <!-- the footer -->
+          <div class="footer">
+              <a href="mission.odt" download> <h3> Présentation </h3>  </a>
+          </div>	
+
+          <!-- fetch the datas from the API for use it the table -->
+          <script type="text/javascript">
+              $(document).ready(function(){
+                $.ajax({
+                  type:"get",
+                  url:"https://anapioficeandfire.com/api/books",
+                  success: function(data){
+                  name="";
+                  publisher="";
+                  for(i in data){
+                  name+= '<a href="' + data[i].url + '">' + data[i].name + '</a><br>';
+                  publisher+=data[i].publisher+"<br>";
+                  }
+                  $("#name").html(name);
+                  $("#publisher").html(publisher);
+                  }
+                });
+              });
+          </script>   
+
+  </body>
+</html>
